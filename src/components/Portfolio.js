@@ -1,8 +1,8 @@
 import React from 'react';
 import './Portfolio.css';
 import mangiare from '../images/mangiare.png';
-import mangiare2 from '../images/mangiare.png';
-import mangiare3 from '../images/mangiare.png';
+import youtube from '../images/youtube.png';
+import shoppingCart from '../images/shoppingCart.png';
 
 //import font awsome
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -17,73 +17,73 @@ const Portfolio = () => {
         const content = (
             <>
             <img className="portfolio-image-popupbox" src={mangiare} alt="restaurant project" />
-            <p>project1
-                sfzloren i[fmgfk fdg]vkkxnvkshdvkv
-                sfkhnkdkfhvv
+            <p> Italian restaurant wetsite
             </p>
             <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/rowaxl/Mangiare")}>https://github.com/rowaxl/Mangiare</a>
             </>
         )
         PopupboxManager.open({content});
-    }
-
-    const popupboxConfigPj1 = {
-        titleBar: {
-            enable: true,
-            text: "Restaurant project"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Restaurant Project",
+              },
+            },
+          });
     }
 
     const openPopupboxPj2 = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={mangiare} alt=" project" />
-            <p>project2
-                sfzloren i[fmgfk fdg]vkkxnvkshdvkv
-                sfkhnkdkfhvv
+            <img className="portfolio-image-popupbox" src={youtube} alt="Youtube Clone project" />
+            <p> Youtube Clone
             </p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/rowaxl/Mangiare")}>https://github.com/rowaxl/Mangiare2</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/websiteClone")}>https://github.com/soyun624/websiteClone</a>
             </>
         )
         PopupboxManager.open({content});
-    }
-
-    const popupboxConfigPj2 = {
-        titleBar: {
-            enable: true,
-            text: "project2"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Youtube Clone",
+              },
+            },
+          });
     }
 
     const openPopupboxPj3 = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={mangiare} alt="restaurant project" />
-            <p>project3
-                sfzloren i[fmgfk fdg]vkkxnvkshdvkv
-                sfkhnkdkfhvv
+            <img className="portfolio-image-popupbox" src={shoppingCart} alt="Shopping cart project" />
+            <p> Shopping cart
             </p>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/rowaxl/Mangiare")}>https://github.com/rowaxle</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/arielcardoso/react-shopping-cart")}>https://github.com/arielcardoso/react-shopping-cart</a>
             </>
         )
         PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Shopping cart",
+              },
+            },
+          });
     }
 
-    const popupboxConfigPj3 = {
+    const popupboxConfig = {
         titleBar: {
             enable: true,
-            text: "project3"
+            text: "Project title"
         },
         fadeIn: true,
         fadeInSpeed: 500
     }
 
     return (
-        <div className="portfolio-wrapper">
+        <div id="portfolio" className="portfolio-wrapper">
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
@@ -94,27 +94,25 @@ const Portfolio = () => {
                     </div>
                 
                     <div className="portfolio-image-box" onClick={openPopupboxPj2}>
-                        <img className="portfolio-image" src={mangiare2} alt="Restautant project"></img>
+                        <img className="portfolio-image" src={youtube} alt="Youtube Clone project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 
                     <div className="portfolio-image-box" onClick={openPopupboxPj3}>
-                        <img className="portfolio-image" src={mangiare3} alt="Restautant project"></img>
+                        <img className="portfolio-image" src={shoppingCart} alt="Shopping cart project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 
-                    <div className="portfolio-image-box">
+                    {/* <div className="portfolio-image-box">
                         <img className="portfolio-image" src={mangiare} alt="Restautant project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfigPj1}/>
-            <PopupboxContainer {...popupboxConfigPj2}/>
-            <PopupboxContainer {...popupboxConfigPj3}/>
+            <PopupboxContainer {...popupboxConfig}/>
         </div>
     )
 }

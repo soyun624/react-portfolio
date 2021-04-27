@@ -43,12 +43,12 @@ nav ul li{
 
 @media(max-width: 768px){
   .navbar-brand{
-    width: 7em;
+    width: 7rem;
 
   }
 }
 
-.navbar-nav >li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -63,7 +63,7 @@ nav ul li{
   background: url(./images/laptop-background.png)  no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info{

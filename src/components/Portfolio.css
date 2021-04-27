@@ -47,6 +47,10 @@
     transition: 0.3s ease-in-out;
 }
 
+.popupbox-wrapper{
+    margin-top: 7rem;
+}
+
 .portfolio-image-popupbox{
     width: 45rem;
     padding: 0 0.5rem;
@@ -61,7 +65,9 @@
     color: var(--primary-red);
 }
 
-
+p{
+    margin-left: 15px;
+}
 @media(max-width: 768px){
     .portfolio-image-popupbox{
         width: 100%;
@@ -70,7 +76,7 @@
 
 @media(max-height: 570px){
     .popupbox-wrapper{
-        height: 80%;
+        height: 100%;
     }
     .portfolio-image-popupbox{
         width: 50%;

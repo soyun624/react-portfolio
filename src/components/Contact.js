@@ -37,10 +37,10 @@ const Contact = () => {
       }
 
     return (
-        <div className="contact">
+        <div id="contact" className="contact">
             <div className="text-center">
                 <h1>contact me</h1>
-                <p>Please fill out the form and I'll contact you as woon as possible.</p>
+                <p>Please fill out the form and I'll contact you as soon as possible.</p>
                 <span className="successMessage">{successMessage}</span>
             </div>
             <div className="container">
