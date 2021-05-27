@@ -16,10 +16,10 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-sm-6">
                             <div className="d-flex">
-                                <p>address ......</p>
+                                <p>Vancouver, BC</p>
                             </div>
                             <div className="d-flex">
-                                <a href="tel:778-788-9582">+1(778)788-9582</a>
+                                <a href="tel:778-788-9582">+1(778)906-0545</a>
                             </div>
                             <div className="d-flex">
                                 <p>soyunlee624@gmail.com</p>
