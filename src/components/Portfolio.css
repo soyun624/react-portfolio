@@ -8,6 +8,7 @@
 }
 .portfolio-image{
     width: 15rem;
+    height: 9.5rem;
     border: 1px solid var(--primary-orange);
     padding: 0.5rem;
 }
