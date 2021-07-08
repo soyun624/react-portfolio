@@ -131,11 +131,11 @@ const Contact = () => {
                         <div className="text-center">
                             <textarea type="text"
                             className="form-control"
-                            placeholder="Description"
-                            name="description"
+                            placeholder="Message"
+                            name="Message"
                             ref={
                                 register({
-                                    required: "Please add description",
+                                    required: "Please add message",
                                     
                                 })
                             }
