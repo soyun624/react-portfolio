@@ -1,10 +1,12 @@
 import React from 'react';
 import './Experience.css';
+import Particles from './particles'
 
 
 const Experience = () => {
     return (
         <div id="experience" className="experience">
+
             <div className="d-flex justify-content-center my-5">
                 <h1>experience</h1>
             </div>
@@ -16,7 +18,7 @@ const Experience = () => {
                             <h5>Freelance Web Developer</h5>
                             <p>Developed of gift certificate system based on block chain and company's facility information management system.
                             </p>
-                            <b>Technical Specifications : </b>Java,  Javascript, Oracle, OZ Application
+                            <p><span style={{fontWeight:'bold'}}>Technical Specifications : </span>Java,  Javascript, Oracle, OZ Application</p>
                             
                         </div>
                     </div>
@@ -27,7 +29,7 @@ const Experience = () => {
                             <h5>Freelance Web Developer</h5>
                             <p>Managed IT maintenance of the POSCO group online blog and renovated intranet.
                             </p>
-                            <b>Technical Specifications : </b>Java, Jsp, Oracle, JQuery, Mybatis
+                            <p><span style={{fontWeight:'bold'}}>Technical Specifications : </span>Java, Jsp, Oracle, JQuery, Mybatis</p>
                             
                         </div>
                     </div> 
@@ -36,10 +38,10 @@ const Experience = () => {
                         <div className="timeline-content">
                             <h3>2012-2013</h3>
                             <h5>Freelance Web Developer</h5>
-                            <p style={{textIndent: '-5px'}}>- Developed the Recruitment HR website used as a job application and candidate's notification system as well as for posting employment advertisements, Maintained HR personnel management system and multi-browser processing.</p>
-                            <p style={{textIndent: '-5px'}}>- Maintained of Samsung Electronics Logitech HR system and developed management evaluation system.</p>
-                            <br />
-                            <b>Technical Specifications : </b>Java, Jsp, Javascript, Oracle, Tibero, Anyframe, Ajax, Jstl
+                            <p className="indent">- Developed the Recruitment HR website used as a job application and candidate's notification system as well as for posting employment advertisements, Maintained HR personnel management system and multi-browser processing.</p>
+                            <p className="indent">- Maintained of Samsung Electronics Logitech HR system and developed management evaluation system.</p>
+                            
+                            <p><span style={{fontWeight:'bold'}}>Technical Specifications : </span>Java, Jsp, Javascript, Oracle, Tibero, Anyframe, Ajax, Jstl</p>
                             
                         </div>
                     </div>
@@ -50,12 +52,12 @@ const Experience = () => {
                             <h5>Web Developer</h5>
                             <p>Development and maintenance of the appropriate construction cost calculation system of the Korea Institute of Civil Engineering and Building Technology.
                             </p>
-                            <b>Technical Specifications : </b>Java, Jsp, Javascript, Oracle
+                            <p><span style={{fontWeight:'bold'}}>Technical Specifications : </span>Java, Jsp, Javascript, Oracle</p>
                         </div>
                     </div>
 
             </div>
-            
+
             
         </div>
     )

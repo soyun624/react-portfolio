@@ -11,7 +11,8 @@
 
 .experience h1{
     text-transform: uppercase;
-    color: var(--primary-orange);
+    color: var(--primary-green);
+    font-weight: bold;
 }
 
 .experience-wrapper::before {
@@ -47,7 +48,7 @@
     height: 1rem;
     border-radius: 50%;
     border: 5px solid rgb(95, 94, 94);
-    background: var(--primary-orange);
+    background: var(--primary-green);
     margin-top: 0.625rem;
     z-index: 3;
 }
@@ -60,9 +61,16 @@
 
 }
 
+.indent{
+    text-indent: -5px;
+}
+
+
+
+
 .timeline-content h3{
     margin-top: 3px;
-    color: var(--primary-red);
+    color: var(--primary-hover-green);
     font-weight: 500;
 }
 

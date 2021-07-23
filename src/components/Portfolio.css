@@ -4,12 +4,13 @@
 }
 
 .portfolio-wrapper h1{
-    color: var(--primary-orange);
+    color: var(--primary-green);
+    font-weight: bold;
 }
 .portfolio-image{
     width: 15rem;
     height: 9.5rem;
-    border: 1px solid var(--primary-orange);
+    border: 1px solid var(--primary-green);
     padding: 0.5rem;
 }
 
@@ -39,7 +40,7 @@
     opacity: 0;
     margin-left: -8rem;
     margin-top: 3.6rem;
-    color: var(--primary-orange);
+    color: var(--primary-green);
     font-size: 1.5rem;
 }
 
@@ -59,7 +60,7 @@
 
 .hyper-link{
     cursor: pointer;
-    color: var(--primary-orange);
+    color: var(--primary-green);
 }
 
 .hyper-link:hover{

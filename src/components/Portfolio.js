@@ -2,8 +2,10 @@ import React from 'react';
 import './Portfolio.css';
 import mangiare from '../images/mangiare.png';
 import tvshow from '../images/tvshow.png';
-import shoppingCart from '../images/shoppingCart.png';
-import chatApp from '../images/chatApp.png'
+import cosmetic from '../images/cosmetic.png';
+import chatApp from '../images/chatApp.png';
+import tetris from '../images/tetris.png';
+import portfolio from '../images/portfolio.png'
 
 //import font awsome
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -11,6 +13,7 @@ import {faSearchPlus} from "@fortawesome/free-solid-svg-icons";
 
 import {PopupboxManager, PopupboxContainer} from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
+
 
 const Portfolio = () => {
 
@@ -70,17 +73,17 @@ const Portfolio = () => {
     const openPopupboxPj3 = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={shoppingCart} alt="Shopping cart project" />
+            <img className="portfolio-image-popupbox" src={cosmetic} alt="E-commerce project" />
             <ul>
                 <li>React</li>
                 <li>Redux</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Heroku</li>
+                <li>Material UI</li>
+                <li>Commerce.js</li>
+                <li>stripe</li>
             </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://react-and-redux-shopping-cart.herokuapp.com/")}>https://react-and-redux-shopping-cart.herokuapp.com/</a>
+            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://nature-cosmetic.netlify.app/")}>https://nature-cosmetic.netlify.app/</a>
             <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/react-shopping-cart")}>https://github.com/soyun624/react-shopping-cart</a>
+            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/cosmetic-website")}>https://github.com/soyun624/cosmetic-website</a>
             </>
         )
         PopupboxManager.open({content});
@@ -88,7 +91,7 @@ const Portfolio = () => {
             content,
             config: {
               titleBar: {
-                text: "Shopping cart",
+                text: "E-commerce",
               },
             },
           });
@@ -120,6 +123,57 @@ const Portfolio = () => {
           });
     }
 
+    const openPopupboxPj5 = () =>{
+        const content = (
+            <>
+            <img className="portfolio-image-popupbox" src={tetris} alt="Tetris Game" />
+            <ul>
+                <li>Html</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+            </ul>
+            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://soyun-tetris-game.netlify.app")}>https://soyun-tetris-game.netlify.app</a>
+            <br/>
+            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/tetris")}>https://github.com/soyun624/tetris</a>
+            </>
+        )
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Tetris Game",
+              },
+            },
+          });
+    }
+
+    const openPopupboxPj6 = () =>{
+        const content = (
+            <>
+            <img className="portfolio-image-popupbox" src={portfolio} alt="Porfolio" />
+            <ul>
+                <li>React</li>
+                <li>React Hooks</li>
+                <li>Bootstrap</li>
+                <li>Html</li>
+                <li>CSS</li>
+            </ul>
+            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://soyun-portfolio.netlify.app/")}>https://soyun-portfolio.netlify.app/</a>
+            <br/>
+            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/react-portfolio")}>https://github.com/soyun624/react-portfolio</a>
+            </>
+        )
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Portfolio",
+              },
+            },
+          });
+    }
 
     const popupboxConfig = {
         titleBar: {
@@ -132,6 +186,7 @@ const Portfolio = () => {
 
     return (
         <div id="portfolio" className="portfolio-wrapper">
+
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
@@ -150,7 +205,7 @@ const Portfolio = () => {
                     </div>
                 
                     <div className="portfolio-image-box" onClick={openPopupboxPj3}>
-                        <img className="portfolio-image" src={shoppingCart} alt="Shopping cart project"></img>
+                        <img className="portfolio-image" src={cosmetic} alt="E-Commerce project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         
@@ -161,8 +216,23 @@ const Portfolio = () => {
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
+
+                    <div className="portfolio-image-box" onClick={openPopupboxPj5}>
+                        <img className="portfolio-image" src={tetris} alt="Tetris Game project"></img>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+
+                    <div className="portfolio-image-box" onClick={openPopupboxPj6}>
+                        <img className="portfolio-image" src={portfolio} alt="Portfolio project"></img>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+
                 </div>
+                
             </div>
+            
             <PopupboxContainer {...popupboxConfig}/>
         </div>
     )
