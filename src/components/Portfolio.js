@@ -97,31 +97,31 @@ const Portfolio = () => {
           });
     }
 
-    const openPopupboxPj4 = () =>{
-        const content = (
-            <>
-            <img className="portfolio-image-popupbox" src={chatApp} alt="Chat App project" />
-            <ul>
-                <li>Rest APIs</li>
-                <li>React Hooks</li>
-                <li>Sockets</li>
-                <li>CSS</li>
-            </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://chat-app-soyun.netlify.app/")}>https://chat-app-soyun.netlify.app</a>
-            <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/chat-app")}>https://github.com/soyun624/chat-app</a>
-            </>
-        )
-        PopupboxManager.open({content});
-        PopupboxManager.update({
-            content,
-            config: {
-              titleBar: {
-                text: "Chat application",
-              },
-            },
-          });
-    }
+    // const openPopupboxPj4 = () =>{
+    //     const content = (
+    //         <>
+    //         <img className="portfolio-image-popupbox" src={chatApp} alt="Chat App project" />
+    //         <ul>
+    //             <li>Rest APIs</li>
+    //             <li>React Hooks</li>
+    //             <li>Sockets</li>
+    //             <li>CSS</li>
+    //         </ul>
+    //         <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://chat-app-soyun.netlify.app/")}>https://chat-app-soyun.netlify.app</a>
+    //         <br/>
+    //         <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/chat-app")}>https://github.com/soyun624/chat-app</a>
+    //         </>
+    //     )
+    //     PopupboxManager.open({content});
+    //     PopupboxManager.update({
+    //         content,
+    //         config: {
+    //           titleBar: {
+    //             text: "Chat application",
+    //           },
+    //         },
+    //       });
+    // }
 
     const openPopupboxPj5 = () =>{
         const content = (
@@ -211,11 +211,11 @@ const Portfolio = () => {
                         
                     </div>
                 
-                    <div className="portfolio-image-box" onClick={openPopupboxPj4}>
+                    {/* <div className="portfolio-image-box" onClick={openPopupboxPj4}>
                         <img className="portfolio-image" src={chatApp} alt="Chat App project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                    </div>
+                    </div> */}
 
                     <div className="portfolio-image-box" onClick={openPopupboxPj5}>
                         <img className="portfolio-image" src={tetris} alt="Tetris Game project"></img>
