@@ -14,10 +14,11 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                         <div className="marker"></div>
                         <div className="timeline-content">
-                            <h3>2015-2016, 2018</h3>
+                            <h3>2017-2018</h3>
                             <h5>Freelance Web Developer</h5>
-                            <p>Developed of gift certificate system based on block chain and company's facility information management system.
-                            </p>
+                            <p className="indent">- Development of an administrator page for issuing, modifying, deleting, data management, etc. of blockchain based mobile gift certificates</p>
+                            <p className="indent">- Development of an issue tracker for control and configuration management of internal systems</p>
+
                             <p><span style={{fontWeight:'bold'}}>Technical Specifications : </span>Java,  Javascript, Oracle, OZ Application</p>
                             
                         </div>
