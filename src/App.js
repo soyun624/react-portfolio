@@ -15,7 +15,6 @@ function App() {
 
     <Navbar />
     <Header />
-    
     <AboutMe />
     <Particles />
     <Experience />

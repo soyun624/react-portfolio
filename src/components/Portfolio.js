@@ -1,11 +1,19 @@
 import React from 'react';
+import ReactPlayer from 'react-player'
 import './Portfolio.css';
-import mangiare from '../images/mangiare.png';
-import tvshow from '../images/tvshow.png';
-import cosmetic from '../images/cosmetic.png';
-import chatApp from '../images/chatApp.png';
-import tetris from '../images/tetris.png';
-import portfolio from '../images/portfolio.png'
+// import mangiare from '../images/mangiare.mov';
+import thumbnail_mangiare from '../images/thumbnail_mangiare.png';
+import tvshow from '../images/tvshow.mov';
+import thumbnail_tvshow from '../images/thumbnail_tvshow.png';
+import cosmetic from '../images/cosmetic.mov';
+import thumbnail_cosmetic from '../images/thumbnail_cosmetic.png';
+import kiosk from '../images/kiosk.mov';
+import thumbnail_kiosk from '../images/thumbnail_kiosk.png';
+import tetris from '../images/tetris.mov';
+import thumbnail_tetris from '../images/thumbnail_tetris.png';
+import portfolio from '../images/portfolio.mov'
+import thumbnail_portfolio from '../images/thumbnail_portfolio.png'
+
 
 //import font awsome
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -17,36 +25,36 @@ import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
 
-    const openPopupboxPj1 = () =>{
-        const content = (
-            <>
-            <img className="portfolio-image-popupbox" src={mangiare} alt="restaurant project" />
-            <ul>
-                <li>HTML</li>
-                <li>Javascript</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-            </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://mangiare.netlify.app")}>https://mangiare.netlify.app</a>
-            <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/italian-restaurant")}>https://github.com/soyun624/italian-restaurant</a>
-            </>
-        )
-        PopupboxManager.open({content});
-        PopupboxManager.update({
-            content,
-            config: {
-              titleBar: {
-                text: "Restaurant Website",
-              },
-            },
-          });
-    }
+    // const openPopupboxRestaurant = () =>{
+    //     const content = (
+    //         <>
+    //         <img className="portfolio-image-popupbox" src={mangiare} alt="restaurant project" />
+    //         <ul>
+    //             <li>HTML</li>
+    //             <li>Javascript</li>
+    //             <li>CSS</li>
+    //             <li>Bootstrap</li>
+    //         </ul>
+    //         <a className="hyper-link" onClick={()=> window.open("https://mangiare.netlify.app")}><b>Website</b></a>
+    //         <br/>
+    //         <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/italian-restaurant")}><b>GitHub</b></a>
+    //         </>
+    //     )
+    //     PopupboxManager.open({content});
+    //     PopupboxManager.update({
+    //         content,
+    //         config: {
+    //           titleBar: {
+    //             text: "Restaurant Website",
+    //           },
+    //         },
+    //       });
+    // }
 
-    const openPopupboxPj2 = () =>{
+    const openPopupboxMovie = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={tvshow} alt="TV Show site project" />
+            <ReactPlayer url={tvshow} width="100%" controls/>
             <ul>
                 <li>HTML</li>
                 <li>Javascript</li>
@@ -54,9 +62,9 @@ const Portfolio = () => {
                 <li>Bootstrap</li>
                 <li>API</li>
             </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://soyun-tvshow.netlify.app")}>https://soyun-tvshow.netlify.app</a>
+            <a className="hyper-link" onClick={()=> window.open("https://soyun-tvshow.netlify.app")}><b>Website</b> </a>
             <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/movie-site")}>https://github.com/soyun624/movie-site</a>
+            <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/movie-site")}><b>GitHub</b></a>
             </>
         )
         PopupboxManager.open({content});
@@ -70,10 +78,10 @@ const Portfolio = () => {
           });
     }
 
-    const openPopupboxPj3 = () =>{
+    const openPopupboxEcommerce = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={cosmetic} alt="E-commerce project" />
+            <ReactPlayer url={cosmetic} width="100%" controls/>
             <ul>
                 <li>React</li>
                 <li>Redux</li>
@@ -81,9 +89,9 @@ const Portfolio = () => {
                 <li>Commerce.js</li>
                 <li>stripe</li>
             </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://nature-cosmetic.netlify.app/")}>https://nature-cosmetic.netlify.app/</a>
+            <a className="hyper-link" onClick={()=> window.open("https://nature-cosmetic.netlify.app/")}><b>Website</b> </a>
             <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/cosmetic-website")}>https://github.com/soyun624/cosmetic-website</a>
+            <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/cosmetic-website")}><b>GitHub</b></a>
             </>
         )
         PopupboxManager.open({content});
@@ -97,44 +105,45 @@ const Portfolio = () => {
           });
     }
 
-    // const openPopupboxPj4 = () =>{
-    //     const content = (
-    //         <>
-    //         <img className="portfolio-image-popupbox" src={chatApp} alt="Chat App project" />
-    //         <ul>
-    //             <li>Rest APIs</li>
-    //             <li>React Hooks</li>
-    //             <li>Sockets</li>
-    //             <li>CSS</li>
-    //         </ul>
-    //         <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://chat-app-soyun.netlify.app/")}>https://chat-app-soyun.netlify.app</a>
-    //         <br/>
-    //         <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/chat-app")}>https://github.com/soyun624/chat-app</a>
-    //         </>
-    //     )
-    //     PopupboxManager.open({content});
-    //     PopupboxManager.update({
-    //         content,
-    //         config: {
-    //           titleBar: {
-    //             text: "Chat application",
-    //           },
-    //         },
-    //       });
-    // }
-
-    const openPopupboxPj5 = () =>{
+    const openPopupboxKiosk = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={tetris} alt="Tetris Game" />
+            <ReactPlayer url={kiosk} width="100%" controls/>
+            <ul>
+                <li>React.js</li>
+                <li>Context API</li>
+                <li>Material UI</li>
+                <li>Node.Js</li>
+                <li>MongoDB</li>
+            </ul>
+            <a className="hyper-link" onClick={()=> window.open("https://burger-order-kiosk.herokuapp.com/")}><b>Website</b></a>
+            <br/>
+            <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/self-order-kiosk")}><b>GitHub</b> </a>
+            </>
+        )
+        PopupboxManager.open({content});
+        PopupboxManager.update({
+            content,
+            config: {
+              titleBar: {
+                text: "Self order kiosk",
+              },
+            },
+          });
+    }
+
+    const openPopupboxGame = () =>{
+        const content = (
+            <>
+            <ReactPlayer url={tetris} width="100%" controls/>
             <ul>
                 <li>Html</li>
                 <li>Javascript</li>
                 <li>CSS</li>
             </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://soyun-tetris-game.netlify.app")}>https://soyun-tetris-game.netlify.app</a>
+            <a className="hyper-link" onClick={()=> window.open("https://soyun-tetris-game.netlify.app")}><b>Website</b> </a>
             <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/tetris")}>https://github.com/soyun624/tetris</a>
+            <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/tetris")}><b>GitHub</b></a>
             </>
         )
         PopupboxManager.open({content});
@@ -148,10 +157,10 @@ const Portfolio = () => {
           });
     }
 
-    const openPopupboxPj6 = () =>{
+    const openPopupboxPortfolio = () =>{
         const content = (
             <>
-            <img className="portfolio-image-popupbox" src={portfolio} alt="Porfolio" />
+            <ReactPlayer url={portfolio} width="100%" controls/>
             <ul>
                 <li>React</li>
                 <li>React Hooks</li>
@@ -159,9 +168,9 @@ const Portfolio = () => {
                 <li>Html</li>
                 <li>CSS</li>
             </ul>
-            <b>Website:</b> <a className="hyper-link" onClick={()=> window.open("https://soyun-portfolio.netlify.app/")}>https://soyun-portfolio.netlify.app/</a>
+            <a className="hyper-link" onClick={()=> window.open("https://soyun-portfolio.netlify.app/")}><b>Website</b> </a>
             <br/>
-            <b>GitHub:</b> <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/react-portfolio")}>https://github.com/soyun624/react-portfolio</a>
+            <a className="hyper-link" onClick={()=> window.open("https://github.com/soyun624/react-portfolio")}><b>GitHub</b></a>
             </>
         )
         PopupboxManager.open({content});
@@ -169,7 +178,7 @@ const Portfolio = () => {
             content,
             config: {
               titleBar: {
-                text: "Portfolio",
+                text: "Personal Website",
               },
             },
           });
@@ -190,41 +199,42 @@ const Portfolio = () => {
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row justify-content-center">
-                    <div className="portfolio-image-box" onClick={openPopupboxPj1}>
-                        <img className="portfolio-image" src={mangiare} alt="Restautant project"></img>
+                    <div className="portfolio-image-box" onClick={openPopupboxKiosk}>
+
+                        <img className="portfolio-image" src={thumbnail_kiosk} alt="Self order kiosk project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         
                     </div>
                
-                    <div className="portfolio-image-box" onClick={openPopupboxPj2}>
-                        <img className="portfolio-image" src={tvshow} alt="TV Show project"></img>
+                    <div className="portfolio-image-box" onClick={openPopupboxEcommerce}>
+                        <img className="portfolio-image" src={thumbnail_cosmetic} alt="E-Commerce project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         
                     </div>
                 
-                    <div className="portfolio-image-box" onClick={openPopupboxPj3}>
-                        <img className="portfolio-image" src={cosmetic} alt="E-Commerce project"></img>
+                    {/* <div className="portfolio-image-box" onClick={openPopupboxRestaurant}>
+                        <img className="portfolio-image" src={thumbnail_mangiare} alt="Restautant project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                         
-                    </div>
-                
-                    {/* <div className="portfolio-image-box" onClick={openPopupboxPj4}>
-                        <img className="portfolio-image" src={chatApp} alt="Chat App project"></img>
-                        <div className="overflow"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div> */}
-
-                    <div className="portfolio-image-box" onClick={openPopupboxPj5}>
-                        <img className="portfolio-image" src={tetris} alt="Tetris Game project"></img>
+                
+                    <div className="portfolio-image-box" onClick={openPopupboxMovie}>
+                        <img className="portfolio-image" src={thumbnail_tvshow} alt="TV Show project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
 
-                    <div className="portfolio-image-box" onClick={openPopupboxPj6}>
-                        <img className="portfolio-image" src={portfolio} alt="Portfolio project"></img>
+                    <div className="portfolio-image-box" onClick={openPopupboxGame}>
+                        <img className="portfolio-image" src={thumbnail_tetris} alt="Tetris Game project"></img>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+
+                    <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
+                        <img className="portfolio-image" src={thumbnail_portfolio} alt="Portfolio project"></img>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
