@@ -3,15 +3,15 @@ import ReactPlayer from 'react-player'
 import './Portfolio.css';
 // import mangiare from '../images/mangiare.mov';
 import thumbnail_mangiare from '../images/thumbnail_mangiare.png';
-import tvshow from '../images/tvshow.mov';
+import tvshow from '../images/tvshow.mp4';
 import thumbnail_tvshow from '../images/thumbnail_tvshow.png';
-import cosmetic from '../images/cosmetic.mov';
+import cosmetic from '../images/cosmetic.mp4';
 import thumbnail_cosmetic from '../images/thumbnail_cosmetic.png';
-import kiosk from '../images/kiosk.mov';
+import kiosk from '../images/kiosk.mp4';
 import thumbnail_kiosk from '../images/thumbnail_kiosk.png';
-import tetris from '../images/tetris.mov';
+import tetris from '../images/tetris.mp4';
 import thumbnail_tetris from '../images/thumbnail_tetris.png';
-import portfolio from '../images/portfolio.mov'
+import portfolio from '../images/portfolio.mp4'
 import thumbnail_portfolio from '../images/thumbnail_portfolio.png'
 
 
