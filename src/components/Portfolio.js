@@ -54,7 +54,7 @@ const Portfolio = () => {
     const openPopupboxMovie = () =>{
         const content = (
             <>
-            <ReactPlayer url={tvshow} width="100%" controls/>
+            <ReactPlayer url={tvshow} width="580px" controls/>
             <ul>
                 <li>HTML</li>
                 <li>Javascript</li>
@@ -81,7 +81,7 @@ const Portfolio = () => {
     const openPopupboxEcommerce = () =>{
         const content = (
             <>
-            <ReactPlayer url={cosmetic} width="100%" controls/>
+            <ReactPlayer url={cosmetic} width="580px" controls/>
             <ul>
                 <li>React</li>
                 <li>Redux</li>
@@ -108,7 +108,7 @@ const Portfolio = () => {
     const openPopupboxKiosk = () =>{
         const content = (
             <>
-            <ReactPlayer url={kiosk} width="100%" controls/>
+            <ReactPlayer url={kiosk} width="580px" controls/>
             <ul>
                 <li>React.js</li>
                 <li>Context API</li>
@@ -135,7 +135,7 @@ const Portfolio = () => {
     const openPopupboxGame = () =>{
         const content = (
             <>
-            <ReactPlayer url={tetris} width="100%" controls/>
+            <ReactPlayer url={tetris} width="580px" controls/>
             <ul>
                 <li>Html</li>
                 <li>Javascript</li>
@@ -160,7 +160,7 @@ const Portfolio = () => {
     const openPopupboxPortfolio = () =>{
         const content = (
             <>
-            <ReactPlayer url={portfolio} width="100%" controls/>
+            <ReactPlayer url={portfolio} width="580px" controls/>
             <ul>
                 <li>React</li>
                 <li>React Hooks</li>
